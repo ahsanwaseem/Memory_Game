@@ -23,8 +23,6 @@ cardsinplay.push(cards[cardId]);
 
 checkmatch();
 
-
-
 }
 // if(cardsinplay.length === 2){
 
