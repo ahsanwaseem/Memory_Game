@@ -1,7 +1,7 @@
 var cards = [
              {rank:"Queen",suit:"hearts",cardimage:"images 2/queen-of-hearts.png"},
              {rank:"Queen",suit:"diamond",cardimage:"images 2/queen-of-diamonds.png"},
-             {rank:"King",suit:"diamond",cardimage:"images 2/King-of-diamonds.png"},
+             {rank:"King",suit:"diamond",cardimage:"images 2/king-of-diamonds.png"},
              {rank:"King",suit:"hearts",cardimage:"images 2/king-of-hearts.png"}
             ];
 var cardsinplay=[];
