@@ -32,9 +32,6 @@ checkmatch();
 
 
 }
-// if(cardsinplay.length === 2){
-
-// }
 
 flipcard(0);
 flipcard(2);
