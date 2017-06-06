@@ -25,7 +25,6 @@ console.log(cards[cardId].suit);
 console.log(cards[cardId].cardimage);
 this.setAttribute('src',cards[cardId].cardimage);
 
-
 if(cardsinplay.length === 2){
 
 checkmatch();
