@@ -2,6 +2,25 @@ body {
     text-align: center;
 }
 
+button{
+
+	padding:5px;
+	font-family:Raleway;
+	font-weight:500;
+	background:#ddd;
+	border:solid 1px #000000;
+	margin-right:20px;
+	font-size:20px;
+
+}
+
+button:hover{
+
+	box-shadow: 2px 2px 1px 1px #000000;
+	transition: box-shadow 0.3s linear;
+	cursor:pointer;
+}
+
 h1{
 
 	font-family:Raleway;
