@@ -47,3 +47,11 @@ var createBoard = function(){
    } 
 createBoard();
 
+var reset = function(){
+
+location.reload();
+
+}
+
+document.getElementById('reset').addEventListener('click',reset);
+
