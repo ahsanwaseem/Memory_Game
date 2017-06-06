@@ -7,32 +7,44 @@ var cards = [
 var cardsinplay=[];
 var checkmatch = function(){
 
-// if(cardsinplay.length === 2){
-
 	if(cardsinplay[0] === cardsinplay[1]){
 
-		console.log("You found a match");
+		alert("You found a match");
 	}else{
 
-		console.log("Sorry try again");
+		alert("Sorry try again");
 	}
-// }
-
 }
 
-var flipcard = function(cardId){
+var flipcard = function(){
 
+cardId = this.getAttribute('data-id');
+cardsinplay.push(cards[cardId].rank);
 console.log("User flipped " + cards[cardId].rank);
 console.log(cards[cardId].suit);
 console.log(cards[cardId].cardimage);
-cardsinplay.push(cards[cardId].rank);
+this.setAttribute('src',cards[cardId].cardimage);
+
+
+if(cardsinplay.length === 2){
 
 checkmatch();
 
-
-
+}
 }
 
-flipcard(0);
-flipcard(2);
+
+var createBoard = function(){
+
+	for (var i = 0; i < cards.length; i++)
+{
+		var cardElement = document.createElement('img');
+        cardElement.setAttribute('src','images 2/back.png');
+		cardElement.setAttribute('data-id', i);
+		cardElement.addEventListener('click', flipcard);
+		document.getElementById('game-board').appendChild(cardElement);
+}
+	
+   } 
+createBoard();
 
