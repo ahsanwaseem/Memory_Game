@@ -4,6 +4,7 @@ var cards = [
              {rank:"King",suit:"diamond",cardimage:"images 2/king-of-diamonds.png"},
              {rank:"King",suit:"hearts",cardimage:"images 2/king-of-hearts.png"}
             ];
+
 var cardsinplay=[];
 var checkmatch = function(){
 
@@ -30,8 +31,14 @@ if(cardsinplay.length === 2){
 checkmatch();
 
 }
-}
 
+if(cardsinplay.length > 2){
+
+alert("You can only flip two cards");
+this.setAttribute('src','images 2/back.png');
+
+}
+}
 
 var createBoard = function(){
 
@@ -54,4 +61,3 @@ location.reload();
 }
 
 document.getElementById('reset').addEventListener('click',reset);
-
